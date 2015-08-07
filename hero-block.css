@@ -2,8 +2,6 @@
   color: rgb(255, 255, 255);
   position: relative;
   padding: 1em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -70,8 +68,6 @@
   margin-bottom: 0;
   background-color: rgba(0,0,0,0.8);
   color: rgb(255, 255, 255);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -79,7 +75,8 @@
   padding-top: 1em;
 }
 
-.content-column__type, .content-column__title {
+.content-column__type,
+.content-column__title {
   padding: 0 10px;
 }
 
@@ -146,11 +143,14 @@
   display: block;
 }
 
-.content-column__title:link, .content-column__title:visited {
+.content-column__title:link,
+.content-column__title:visited {
   color: inherit;
 }
 
-.content-column__title:hover, .content-column__title:active, .content-column__title:focus {
+.content-column__title:hover,
+.content-column__title:active,
+.content-column__title:focus {
   opacity: 0.5;
 }
 
@@ -182,7 +182,7 @@
   font-size: 0.75em;
 }
 
-@media only all and (min-width: 768px) {
+@media only all and (min-width: 768px) {q
   .hero-block__cta {
     position: absolute;
     bottom: 3em;

@@ -1,17 +1,10 @@
+/* hero-block */
+
 .hero-block {  
   color: rgb(255, 255, 255);
   position: relative;
   padding: 1em;
   box-sizing: border-box;
-}
-
-@media only all and (min-width: 768px) {
-  .hero-block {
-    height: 400px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 3em;
-  }
 }
 
 .hero-block--light {
@@ -27,13 +20,6 @@
   line-height: 1;
 }
 
-@media only all and (min-width: 768px) {
-  .hero-block__copyright {
-    top: 10px;
-    right: 10px;
-  }
-}
-
 .hero-block__title {
   font-size: 1.8em;
   text-align: left;
@@ -43,12 +29,6 @@
   display: block;
 }
 
-@media only all and (min-width: 768px) {
-  .hero-block__title {
-    font-size: 4em;
-  }
-}
-
 .hero-block__sub_title {
   display: block;
   font-family: 'Avenir LT W01 35 Light', Helvetica, Arial, Verdana, sans-serif;
@@ -56,11 +36,29 @@
 }
 
 @media only all and (min-width: 768px) {
+  .hero-block {
+    height: 400px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 3em;
+  }
+
+  .hero-block__copyright {
+    top: 10px;
+    right: 10px;
+  }
+
+  .hero-block__title {
+    font-size: 4em;
+  }
+
   .hero-block__sub_title {
     max-width: 45%;
   }
+
 }
 
+/* content-column */
 .content-column {
   display: block;
   list-style: none;
@@ -154,6 +152,7 @@
   opacity: 0.5;
 }
 
+/* Content column when inside a hero-block */
 .hero-block__content-column {
   display: none;
 }
@@ -175,25 +174,15 @@
   }
 }
 
-.hero-block__cta {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: 1px solid rgb(255, 255, 255);
-  font-size: 0.75em;
+/* cta */
+
+.cta__text {
+  display: block;
+  margin-bottom: 1em;
 }
 
-@media only all and (min-width: 768px) {q
-  .hero-block__cta {
-    position: absolute;
-    bottom: 3em;
-    left: 4em;
-    width: 20%;
-    border-top: 0;
-    font-size: 1em;
-  }
-}
-
-.cta__link, a.cta__link {
+.cta__link,
+a.cta__link {
   display: inline-block;
   padding: 0.5em 1em;
   -webkit-border-radius: 5px;
@@ -213,18 +202,33 @@
   transition: background-color 0.3s ease-in-out;
 }
 
+.cta__link:hover {
+  background-color: rgb(235, 12, 87);
+}
+
 @media only all and (min-width: 900px) {
-  .cta__link, a.cta__link {
+  .cta__link,
+  a.cta__link {
     display: inline-block;
     padding: 1em 2em;
   }
 }
 
-.cta__link:hover {
-  background-color: rgb(235, 12, 87);
+/* cta when inside a hero-block */
+.hero-block__cta {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid rgb(255, 255, 255);
+  font-size: 0.75em;
 }
 
-.cta__text {
-  display: block;
-  margin-bottom: 1em;
+@media only all and (min-width: 768px) {
+  .hero-block__cta {
+    position: absolute;
+    bottom: 3em;
+    left: 4em;
+    width: 20%;
+    border-top: 0;
+    font-size: 1em;
+  }
 }

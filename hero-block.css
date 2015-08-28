@@ -165,12 +165,25 @@
     top: 50px;
     width: 25%;
   }
+
+  .hero-block--has-content-column .hero-block__title {
+    /* (space available that's not content column - right offest of content
+    column - desired minimum gap between content column & title) */
+    width: calc(75% - 50px - 5px);
+  }
 }
 
 @media only all and (min-width: 1220px) {
   .hero-block__content-column {
     width: 20%;
   }
+
+  .hero-block--has-content-column .hero-block__title {
+    /* (space available that's not content column - right offest of content
+    column - desired minimum gap between content column & title) */
+    width: calc(75% - 20px - 5px);
+  }
+
 }
 
 /* cta */

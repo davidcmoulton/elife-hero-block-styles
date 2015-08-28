@@ -237,10 +237,21 @@ a.cta__link {
 @media only all and (min-width: 768px) {
   .hero-block__cta {
     border-top: 0;
+    bottom: 1em;
+    font-size: 1em;
+    left: 3em;
+    position: absolute;
+    max-width: 40%;
+  }
+}
+
+@media only all and (min-width: 1220px) {
+  .hero-block__cta {
+    border-top: 0;
     bottom: 3em;
     font-size: 1em;
     left: 3em;
     position: absolute;
-    width: 20%;
+    max-width: 20%;
   }
 }

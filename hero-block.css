@@ -19,7 +19,7 @@
   color: rgb(0, 0, 0);
 }
 
-.hero-block__copyright {
+.hero-block__image_credit {
   font-size: 0.5em;
   line-height: 1;
   opacity: 0.6;
@@ -54,7 +54,7 @@
     padding: 3em;
   }
 
-  .hero-block__copyright {
+  .hero-block__image_credit {
     right: 10px;
     top: 10px;
   }

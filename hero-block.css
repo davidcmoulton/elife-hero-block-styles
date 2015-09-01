@@ -55,9 +55,7 @@
 
 /* content-column */
 .content-column {
-  background-color: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
   display: block;
   list-style: none;
   margin-bottom: 0;
@@ -78,58 +76,6 @@
   line-height: 1;
   padding-bottom: 0.5em;
   text-transform: uppercase;
-}
-
-.content-column__item--insight .content-column__type {
-  color: rgb(251, 12, 87);
-}
-
-.content-column__item--news .content-column__type {
-  color: rgb(7, 207, 217);
-}
-
-.content-column__item--editorial .content-column__type {
-  color: rgb(7, 113, 214);
-}
-
-.content-column__item--other .content-column__type {
-  color: rgb(7, 207, 217);
-}
-
-.content-column__item--podcast .content-column__type {
-  color: rgb(186, 52, 166);
-}
-
-.content-column__item--insight .content-column__type {
-  color: rgb(98, 159, 67);
-}
-
-.content-column__item--feature-article .content-column__type {
-  color: rgb(251, 12, 87);
-}
-
-.content-column__item--research .content-column__type {
-  color: rgb(9, 114, 200);
-}
-
-.content-column__item--advance .content-column__type {
-  color: rgb(9, 114, 200);
-}
-
-.content-column__item--registered-report .content-column__type {
-  color: rgb(9, 114, 200);
-}
-
-.content-column__item--replication-study .content-column__type {
-  color: rgb(9, 114, 200);
-}
-
-.content-column__item--tools .content-column__type {
-  color: rgb(9, 114, 200);
-}
-
-.content-column__item--short .content-column__type {
-  color: rgb(9, 114, 200);
 }
 
 .content-column__title {

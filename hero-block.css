@@ -154,18 +154,18 @@
 }
 
 /* Content column when inside a hero-block */
-.hero-block__content-column .content-column__title:link,
-.hero-block__content-column .content-column__title:visited {
-  color: inherit;
-}
-
-.hero-block__content-column .content-column__title:hover,
-.hero-block__content-column .content-column__title:active,
-.hero-block__content-column .content-column__title:focus {
-  opacity: 0.5;
-}
-
 @media only all and (min-width: 1220px) {
+  .hero-block__content-column .content-column__title:link,
+  .hero-block__content-column .content-column__title:visited {
+    color: inherit;
+  }
+
+  .hero-block__content-column .content-column__title:hover,
+  .hero-block__content-column .content-column__title:active,
+  .hero-block__content-column .content-column__title:focus {
+    opacity: 0.5;
+  }
+
   .hero-block__content-column {
     color: rgb(255, 255, 255);
     display: block;

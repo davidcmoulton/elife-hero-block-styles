@@ -124,7 +124,7 @@
 @media only all and (min-width: 1220px) {
   .content-column__type,
   .content-column__title {
-    padding-left: 38px;
+    padding-left: 28px;
   }
 }
 
@@ -137,11 +137,13 @@
 
 .content-column__title {
   display: block;
+  min-height: 30px;
 }
 
 @media only all and (min-width: 1220px) {
   .content-column__item--podcast .content-column__title {
-    background: url('podcast-black.svg') no-repeat 0 center;
+    background: url('podcast-black.svg') no-repeat 0 -4px;
+    background-size: 25px;
   }
 
   .hero-block:not(.hero-block--light) .content-column__item--podcast .content-column__title {

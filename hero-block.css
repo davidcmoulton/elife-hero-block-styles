@@ -262,7 +262,20 @@ a.cta__link {
   font-size: 0.75em;
   margin: 1em auto 0;
   padding-top: 1em;
-  width: 75%;
+  text-align: center;
+  width: 90%;
+}
+
+.hero-block__cta .cta__link,
+.hero-block__cta a.cta__link {
+  display: block;
+  float: none;
+  margin: 1em auto 0;
+  width: 5em;
+}
+
+.hero-block__cta .cta__text {
+  float: none;
 }
 
 @media only all and (min-width: 768px) {
@@ -272,6 +285,16 @@ a.cta__link {
     left: 3em;
     position: absolute;
     width: calc(75% - 50px - 5px);
+  }
+
+  .hero-block__cta {
+    margin: 1em 0 0;
+    text-align: left;
+  }
+
+  .hero-block__cta .cta__link,
+  .hero-block__cta a.cta__link {
+    display: inline-block;
   }
 }
 

@@ -121,6 +121,13 @@
   padding: 0 10px;
 }
 
+@media only all and (min-width: 1220px) {
+  .content-column__type,
+  .content-column__title {
+    padding-left: 38px;
+  }
+}
+
 .content-column__type {
   font-size: 0.75em;
   line-height: 1;
@@ -132,7 +139,32 @@
   display: block;
 }
 
+@media only all and (min-width: 1220px) {
+  .content-column__item--podcast .content-column__title {
+    background: url('podcast-black.svg') no-repeat 0 center;
+  }
+
+  .hero-block:not(.hero-block--light) .content-column__item--podcast .content-column__title {
+    background-image: url('podcast-white.svg');
+  }
+}
+
+.hero-block--light .hero-block__content-column {
+  color: rgb(0, 0, 0);
+}
+
 /* Content column when inside a hero-block */
+.hero-block__content-column .content-column__title:link,
+.hero-block__content-column .content-column__title:visited {
+  color: inherit;
+}
+
+.hero-block__content-column .content-column__title:hover,
+.hero-block__content-column .content-column__title:active,
+.hero-block__content-column .content-column__title:focus {
+  opacity: 0.5;
+}
+
 @media only all and (min-width: 1220px) {
   .hero-block__content-column {
     color: rgb(255, 255, 255);
@@ -141,34 +173,19 @@
     position: absolute;
     right: 50px;
     top: 50px;
-    width: 25%;
-  }
-
-  .hero-block--light .hero-block__content-column {
-    color: rgb(0, 0, 0);
-  }
-
-  .hero-block__content-column .content-column__title:link,
-  .hero-block__content-column .content-column__title:visited {
-    color: inherit;
-  }
-
-  .hero-block__content-column .content-column__title:hover,
-  .hero-block__content-column .content-column__title:active,
-  .hero-block__content-column .content-column__title:focus {
-    opacity: 0.5;
+    width: 22.5%;
   }
 
   .hero-block__title {
     /* (space available that's not content column - right offest of content
     column - desired minimum gap between content column & title) */
-    width: calc(75% - 50px - 5px);
+    width: calc(77.5% - 50px - 5px);
   }
 
   .hero-block__sub_title {
     /* (space available that's not content column - right offest of content
     column - desired minimum gap between content column & title) */
-    width: calc(75% - 50px - 5px);
+    width: calc(77.5% - 50px - 5px);
   }
 
 }
